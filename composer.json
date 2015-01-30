@@ -11,6 +11,11 @@
         }
     },
     "description": "placehold.it provider for Faker",
+    "keywords": [
+        "faker",
+        "placeholder",
+        "provider"
+    ],
     "license": "MIT",
     "name": "emanueleminotto/faker-placehold-it-provider",
     "require": {
