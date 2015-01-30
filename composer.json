@@ -1,0 +1,22 @@
+{
+    "authors": [
+        {
+            "email": "minottoemanuele@gmail.com",
+            "name": "Emanuele Minotto"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "EmanueleMinotto\\Faker\\": "."
+        }
+    },
+    "description": "placehold.it provider for Faker",
+    "license": "MIT",
+    "name": "emanueleminotto/faker-placehold-it-provider",
+    "require": {
+        "fzaninotto/faker": "~1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.4"
+    }
+}
