@@ -6,8 +6,19 @@ php:
 - 5.6
 - hhvm
 
+env:
+  global:
+    secure: FIvPhdVZv/3Pb/Lj3q+jV8K465R7xe6c27nXgkf/WtPGqIJAk8en67vhRUJIpRbRnA1sx4Uqm5YFNPO2Tw9M4sgkrwOvXjyfL9ZwK1YsIOCwfm1LubMolAm4GzmwEC0lCGd/GrcLvCej5WtQ//a565/z+t23lZbyGDWNhOfhUWE=
+
 before_script:
-- composer install --dev
+- composer require satooshi/php-coveralls:~0.6 --dev
+
+script:
+- vendor/bin/phpunit --coverage-clover build/logs/clover.xml
+
+after_script:
+- php vendor/bin/coveralls -v
+- if [ $TRAVIS_PHP_VERSION = '5.6' ]; then sh generate-api.sh; fi
 
 notifications:
   email: false

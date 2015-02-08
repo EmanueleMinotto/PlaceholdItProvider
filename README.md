@@ -1,7 +1,15 @@
-PlaceholdIt Provider [![Build Status](https://travis-ci.org/EmanueleMinotto/PlaceholdItProvider.svg)](https://travis-ci.org/EmanueleMinotto/PlaceholdItProvider)
+PlaceholdIt Provider
 ====================
 
+[![Build Status](https://img.shields.io/travis/EmanueleMinotto/PlaceholdItProvider.svg?style=flat)](https://travis-ci.org/EmanueleMinotto/PlaceholdItProvider)
+[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/a22e5509-ca4f-4902-a458-5994123c058f.svg?style=flat)](https://insight.sensiolabs.com/projects/a22e5509-ca4f-4902-a458-5994123c058f)
+[![Coverage Status](https://img.shields.io/coveralls/EmanueleMinotto/PlaceholdItProvider.svg?style=flat)](https://coveralls.io/r/EmanueleMinotto/PlaceholdItProvider)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/EmanueleMinotto/PlaceholdItProvider.svg?style=flat)](https://scrutinizer-ci.com/g/EmanueleMinotto/PlaceholdItProvider/)
+[![Total Downloads](https://img.shields.io/packagist/dt/emanueleminotto/faker-placehold-it-provider.svg?style=flat)](https://packagist.org/packages/emanueleminotto/faker-placehold-it-provider)
+
 [placehold.it](http://placehold.it/) provider for [Faker](https://github.com/fzaninotto/Faker).
+
+API: [emanueleminotto.github.io/PlaceholdItProvider](http://emanueleminotto.github.io/PlaceholdItProvider/)
 
 ## Install
 Install Silex using [Composer](http://getcomposer.org/).
