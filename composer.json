@@ -1,15 +1,5 @@
 {
-    "authors": [
-        {
-            "email": "minottoemanuele@gmail.com",
-            "name": "Emanuele Minotto"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "EmanueleMinotto\\Faker\\": "."
-        }
-    },
+    "name": "emanueleminotto/faker-placehold-it-provider",
     "description": "placehold.it provider for Faker",
     "keywords": [
         "faker",
@@ -17,11 +7,22 @@
         "provider"
     ],
     "license": "MIT",
-    "name": "emanueleminotto/faker-placehold-it-provider",
+    "authors": [
+        {
+            "name": "Emanuele Minotto",
+            "email": "minottoemanuele@gmail.com",
+            "homepage": "http://www.emanueleminotto.it"
+        }
+    ],
     "require": {
         "fzaninotto/faker": "~1"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "EmanueleMinotto\\Faker\\": "."
+        }
     }
 }
