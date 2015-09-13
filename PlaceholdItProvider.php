@@ -16,14 +16,14 @@ class PlaceholdItProvider extends Base_Provider
     /**
      * placehold.it image URL.
      *
-     * @param integer|string|array $size   Height is optional, if no height is specified the image will be a square.
-     * @param string               $format Adding an image file extension will render the image in the proper format.
-     * @param array                $colors An array containing background color and foreground color.
-     * @param string               $text   Custom text can be entered using a query string at the very end of the url.
+     * @param int|string|array $size   Height is optional, if no height is specified the image will be a square.
+     * @param string           $format Adding an image file extension will render the image in the proper format.
+     * @param array            $colors An array containing background color and foreground color.
+     * @param string           $text   Custom text can be entered using a query string at the very end of the url.
      *
      * @return string
      */
-    public static function imageUrl($size, $format = 'gif', array $colors = array(), $text = null)
+    public static function imageUrl($size, $format = 'gif', array $colors = [], $text = null)
     {
         // $colors should be 100 or 100x100
         // but can be ['height' => 100, 'width' => 100]
@@ -47,9 +47,9 @@ class PlaceholdItProvider extends Base_Provider
         }
 
         if ($text) {
-            $base .= '?'.http_build_query(array(
+            $base .= '?'.http_build_query([
                 'text' => $text,
-            ));
+            ]);
         }
 
         return $base;
